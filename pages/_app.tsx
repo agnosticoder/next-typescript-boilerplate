@@ -4,7 +4,7 @@ import Layout from '../layouts/Layout';
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
-        <div className='container'>
+        <div className='bg-slate-200'>
             <Layout>
                 <Component {...pageProps} />
             </Layout>

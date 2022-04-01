@@ -1,16 +1,15 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { FC } from 'react';
-import styles from '../styles/modules/Layout.module.scss';
 
 const Layout:FC = ({ children }) => (
-    <div className={styles.container}>
+    <div className='mx-16 pt-4'>
         <Head>
             <title>App Title will go here</title>
         </Head>
-        <div className="header">
-            <div className="nav-container">
-                <ul className="nav">
+        <div>
+            <div>
+                <ul>
                     {/* <li>
                         <Link href="/">
                             <a className="nav-link">Home</a>
@@ -23,7 +22,7 @@ const Layout:FC = ({ children }) => (
                     </li> */}
                 </ul>
             </div>
-            <h1>App Name</h1>
+            <h1 className='text-3xl font-bold text-blue-600'>App Name</h1>
         </div>
         <main>{children}</main>
     </div>
